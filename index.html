@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Carlos Silva, marceneiro na Vila Prudente, São Paulo. Cozinhas, armários, estantes e móveis sob encomenda feitos na oficina e instalados por ele mesmo. Orçamento sem custo.">
+  <title>Marcenaria Silva — Carlos Silva, marceneiro em São Paulo</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <div class="cursor" aria-hidden="true"></div>
+
+  <header class="topo" id="topo">
+    <div class="topo__barra">
+      <div class="topo__progresso" aria-hidden="true"></div>
+      <div class="topo__linha">
+        <a href="#inicio" class="marca" aria-label="Marcenaria Silva — início">
+          <svg class="marca__simbolo" viewBox="0 0 32 32" width="30" height="30" aria-hidden="true">
+            <path d="M4 28V12l12-8 12 8v16" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+            <path d="M11 28V19h10v9" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linejoin="round"/>
+          </svg>
+          <span class="marca__nome">Marcenaria <em>Silva</em></span>
+        </a>
+
+        <input type="checkbox" id="menu-toggle" class="menu-toggle">
+        <label for="menu-toggle" class="menu-botao" aria-label="Abrir menu">
+          <span></span><span></span><span></span>
+        </label>
+
+        <nav class="menu" aria-label="Principal">
+          <a href="#sobre">Quem faz</a>
+          <a href="#servicos">O que eu faço</a>
+          <a href="#como-trabalho">Como trabalho</a>
+          <a href="#depoimentos">Clientes</a>
+          <a href="#contato" class="botao botao--pequeno">Pedir orçamento</a>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <main>
+
+    <!-- 1. Abertura -->
+    <section id="inicio" class="abertura">
+      <div class="container abertura__linha">
+        <div class="abertura__texto">
+          <h1>Móveis sob medida feitos na minha oficina e instalados por mim.</h1>
+          <p class="abertura__intro">
+            Sou o Carlos Silva, marceneiro há 15 anos na Vila Prudente, zona leste de São Paulo.
+            Faço cozinhas, armários, estantes e aquele móvel que não existe pronto em loja —
+            do primeiro rascunho até apertar o último parafuso na sua casa.
+          </p>
+          <div class="abertura__acoes">
+            <a href="#contato" class="botao">Pedir orçamento</a>
+            <a href="https://wa.me/5511999990000" class="link-seta">WhatsApp (11) 99999-0000</a>
+          </div>
+          <p class="abertura__nota">Orçamento sem custo. Atendo a capital e a Grande São Paulo.</p>
+        </div>
+
+        <div class="abertura__foto">
+          <img src="img/hero.jpg" alt="Carlos na bancada da oficina, marcando uma tábua de freijó" width="1600" height="1067">
+        </div>
+      </div>
+    </section>
+
+    <!-- 2. Quem faz -->
+    <section id="sobre" class="secao">
+      <div class="container secao__linha">
+        <div class="secao__titulo">
+          <h2>Quem faz</h2>
+        </div>
+        <div class="secao__corpo sobre__corpo">
+          <div class="sobre__texto">
+            <p>
+              Comecei aos 16 anos varrendo serragem na oficina do meu pai, na Mooca. Ele fazia
+              porta e janela; eu fui pro lado dos móveis. Em 2011 abri a minha própria oficina e
+              desde então já saíram dali mais de 300 peças — a maioria cozinha e guarda-roupa, que
+              é o que mais se pede, mas também bancada de estúdio, estante pra 800 livros e até um
+              berço que depois virou escrivaninha.
+            </p>
+            <p>
+              Trabalho sozinho, com ajuda do meu sobrinho Diego nas instalações maiores. Isso quer
+              dizer que quem mede, desenha, corta e instala é a mesma pessoa. Não tem vendedor no
+              meio, e o que a gente combinar é o que vai ser feito.
+            </p>
+            <ul class="fatos">
+              <li>Oficina própria na Vila Prudente, desde 2011</li>
+              <li>Mais de 300 móveis entregues</li>
+              <li>Atendo São Paulo e Grande SP</li>
+            </ul>
+          </div>
+          <div class="sobre__foto">
+            <img src="img/sobre.jpg" alt="Mãos do Carlos ajustando o encaixe de uma peça de madeira na bancada" width="1600" height="1067">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 3. O que eu faço -->
+    <section id="servicos" class="secao">
+      <div class="container secao__linha">
+        <div class="secao__titulo">
+          <h2>O que eu faço</h2>
+          <p class="secao__apoio">Cada trabalho começa com uma visita e um desenho. Nada sai da oficina sem você ter aprovado o projeto.</p>
+        </div>
+        <div class="secao__corpo">
+          <ul class="trabalhos">
+            <li class="trabalho">
+              <img src="img/cozinha.jpg" alt="Cozinha com armários de madeira escura e bancada clara" loading="lazy" width="1600" height="1067">
+              <h3>Cozinhas</h3>
+              <p>Aéreo, balcão, torre de forno, ilha. Faço em MDF com fita de borda de 2&nbsp;mm e dobradiça com amortecedor — o mesmo padrão das lojas grandes, sem o preço do showroom.</p>
+            </li>
+            <li class="trabalho">
+              <img src="img/guarda-roupa.jpg" alt="Interior de closet com gavetas e cabideiro em madeira clara" loading="lazy" width="1600" height="2133">
+              <h3>Guarda-roupas e closets</h3>
+              <p>Do quarto pequeno que pede porta de correr até o closet inteiro. A divisão interna a gente define junto, olhando a roupa que você tem de verdade, não a de catálogo.</p>
+            </li>
+            <li class="trabalho">
+              <img src="img/home-office.jpg" alt="Escritório em casa com bancada e estante de madeira" loading="lazy" width="1600" height="1440">
+              <h3>Home office</h3>
+              <p>Bancada na medida da parede, gaveteiro, nicho pra impressora, passagem de cabo escondida. Desde 2020 é o pedido que mais cresceu: já passei de 40.</p>
+            </li>
+            <li class="trabalho">
+              <img src="img/sala.jpg" alt="Sala com painel de TV e armário em madeira clara" loading="lazy" width="1600" height="2195">
+              <h3>Sala</h3>
+              <p>Painel de TV, rack, estante, aparador. Nas peças que ficam à vista costumo sugerir madeira de verdade — freijó ou tauari — porque envelhece melhor que o laminado.</p>
+            </li>
+            <li class="trabalho">
+              <img src="img/restauracao.jpg" alt="Aplicação de óleo em tampo de madeira maciça" loading="lazy" width="1600" height="2133">
+              <h3>Restauração</h3>
+              <p>Cômoda da avó, mesa de herança, cadeira que soltou o encaixe. Lixo, colo, refaço a peça que falta e dou o acabamento que a peça pede: óleo, cera ou verniz.</p>
+            </li>
+            <li class="trabalho">
+              <img src="img/personalizado.jpg" alt="Marcação de medida com lápis em uma tábua de pinho" loading="lazy" width="1600" height="1067">
+              <h3>Sob encomenda</h3>
+              <p>Peça que não existe em loja: mesa pra ateliê de cerâmica, bancada de padaria, prateleira pra coleção de discos. Traz a ideia, mesmo que seja um rabisco no guardanapo.</p>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. Como trabalho -->
+    <section id="como-trabalho" class="secao">
+      <div class="container secao__linha">
+        <div class="secao__titulo">
+          <h2>Como trabalho</h2>
+        </div>
+        <div class="secao__corpo">
+          <dl class="regras">
+            <div class="regra">
+              <dt>Orçamento fechado</dt>
+              <dd>O valor que vai no papel é o valor final. Se mudar alguma coisa no meio do caminho, a gente conversa antes, não depois.</dd>
+            </div>
+            <div class="regra">
+              <dt>Prazo por escrito</dt>
+              <dd>Entre aprovar o desenho e instalar, a média é de 25 a 35 dias. Se atrasar por minha causa, o desconto sai do meu bolso.</dd>
+            </div>
+            <div class="regra">
+              <dt>Material que eu mesmo escolho</dt>
+              <dd>MDF Duratex ou Arauco, ferragem Häfele ou Blum, cola PVA de marcenaria. Não uso o mais barato que aparecer só pra fechar o preço.</dd>
+            </div>
+            <div class="regra">
+              <dt>Garantia de 2 anos</dt>
+              <dd>Dobradiça que solta, gaveta que trava, porta que desalinha: você me chama e eu volto pra resolver.</dd>
+            </div>
+            <div class="regra">
+              <dt>Pagamento</dt>
+              <dd>40% ao fechar o projeto, 60% no dia da instalação. Pix, cartão em até 3 vezes ou dinheiro.</dd>
+            </div>
+            <div class="regra">
+              <dt>Instalação e limpeza</dt>
+              <dd>Instalo eu mesmo, no dia combinado. Levo as sobras embora e deixo o ambiente pronto pra usar.</dd>
+            </div>
+          </dl>
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. Do contato à instalação -->
+    <section id="processo" class="secao">
+      <div class="container secao__linha">
+        <div class="secao__titulo">
+          <h2>Do primeiro contato ao móvel instalado</h2>
+        </div>
+        <div class="secao__corpo">
+          <ol class="etapas">
+            <li>
+              <span class="etapa__n" aria-hidden="true">1.</span>
+              <h3>Você me chama</h3>
+              <p>Pelo formulário aqui embaixo ou pelo WhatsApp. Manda uma foto do espaço e a ideia, mesmo que ainda esteja vaga.</p>
+            </li>
+            <li>
+              <span class="etapa__n" aria-hidden="true">2.</span>
+              <h3>Vou medir</h3>
+              <p>Visita sem custo na capital e na Grande SP. Levo trena, laser e um caderno. Leva uns 40 minutos.</p>
+            </li>
+            <li>
+              <span class="etapa__n" aria-hidden="true">3.</span>
+              <h3>Desenho e orçamento</h3>
+              <p>Em até 5 dias úteis você recebe o desenho com medidas e o valor fechado. Ajustamos até ficar do jeito que você quer.</p>
+            </li>
+            <li>
+              <span class="etapa__n" aria-hidden="true">4.</span>
+              <h3>Faço e instalo</h3>
+              <p>Produção na oficina, instalação marcada com você. Se quiser acompanhar, mando foto do andamento.</p>
+            </li>
+          </ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. Clientes -->
+    <section id="depoimentos" class="secao">
+      <div class="container secao__linha">
+        <div class="secao__titulo">
+          <h2>O que os clientes dizem</h2>
+          <p class="secao__apoio">Recados que recebi pelo WhatsApp e pelo Google, publicados com autorização.</p>
+        </div>
+        <div class="secao__corpo">
+          <div class="relatos">
+            <blockquote class="relato">
+              <p>Fiz a cozinha inteira com o Carlos no ano passado. Ele avisou que ia levar 30 dias e entregou em 28. O que mais gostei foi que ele mesmo instalou, não mandou outra pessoa.</p>
+              <cite>Mariana, Vila Mariana — cozinha, 2025</cite>
+            </blockquote>
+            <blockquote class="relato">
+              <p>Pedi uma bancada de trabalho pra uma sala bem pequena e foi ele que deu a ideia da parte que dobra. Uso todo dia.</p>
+              <cite>Rodrigo, Pinheiros — home office, 2024</cite>
+            </blockquote>
+            <blockquote class="relato">
+              <p>Levei a cômoda da minha avó, estava com a gaveta quebrada e a tinta descascando. Voltou parecendo outra, mas ainda com cara de antiga, que era o que eu queria.</p>
+              <cite>Juliana, Santana — restauração, 2024</cite>
+            </blockquote>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. Contato -->
+    <section id="contato" class="contato">
+      <div class="container contato__linha">
+        <div class="contato__texto">
+          <h2>Vamos conversar sobre o seu móvel</h2>
+          <p>
+            Preencha aqui do lado ou me chame direto. Respondo no mesmo dia, ou no dia seguinte
+            se estiver com a serra ligada.
+          </p>
+          <dl class="contato__dados">
+            <dt>WhatsApp e telefone</dt>
+            <dd><a href="tel:+5511999990000">(11) 99999-0000</a></dd>
+            <dt>E-mail</dt>
+            <dd><a href="mailto:carlos@marcenariasilva.com.br">carlos@marcenariasilva.com.br</a></dd>
+            <dt>Oficina</dt>
+            <dd>Rua Ibitirama, 000 — Vila Prudente, São Paulo<br>Visita à oficina com hora marcada.</dd>
+            <dt>Horário</dt>
+            <dd>Segunda a sexta, das 8h às 18h. Sábado até meio-dia.</dd>
+          </dl>
+        </div>
+
+        <form class="formulario" action="#modal-sucesso" method="get">
+          <div class="campo">
+            <label for="nome">Seu nome <small>até 60 caracteres</small></label>
+            <input type="text" id="nome" name="nome" minlength="3" maxlength="60" required>
+          </div>
+
+          <div class="campo-grupo">
+            <div class="campo">
+              <label for="email">E-mail <small>até 80</small></label>
+              <input type="email" id="email" name="email" maxlength="80" required>
+            </div>
+            <div class="campo">
+              <label for="telefone">WhatsApp <small>DDD + número</small></label>
+              <input type="tel" id="telefone" name="telefone" inputmode="numeric" pattern="[0-9()\-\s+]{10,15}" minlength="10" maxlength="15" title="Digite o DDD e o número. Ex.: (11) 99999-9999" required>
+            </div>
+          </div>
+
+          <div class="campo">
+            <label for="servico">O que você precisa</label>
+            <select id="servico" name="servico">
+              <option value="">Escolha, se já souber</option>
+              <option value="cozinha">Cozinha</option>
+              <option value="guarda-roupa">Guarda-roupa ou closet</option>
+              <option value="home-office">Home office</option>
+              <option value="sala">Sala</option>
+              <option value="restauracao">Restauração</option>
+              <option value="outro">Outra coisa</option>
+            </select>
+          </div>
+
+          <div class="campo">
+            <label for="mensagem">Conta um pouco do que tem em mente <small>de 10 a 300 caracteres</small></label>
+            <textarea id="mensagem" name="mensagem" rows="4" placeholder="Ex.: guarda-roupa de 3 metros num quarto de casal, com porta de correr." minlength="10" maxlength="300" required></textarea>
+            <span id="contador-mensagem" class="contador" aria-live="polite"></span>
+          </div>
+
+          <div class="campo campo--checkbox">
+            <input type="checkbox" id="privacidade" name="privacidade" required>
+            <label for="privacidade">Pode me chamar por telefone, WhatsApp ou e-mail.</label>
+          </div>
+
+          <button type="submit" class="botao botao--largo">Enviar</button>
+          <p class="formulario__aviso">Seu contato fica só comigo. Não passo pra ninguém.</p>
+        </form>
+      </div>
+
+      <!-- Confirmação (aparece via :target após o envio) -->
+      <div id="modal-sucesso" class="modal" role="dialog" aria-labelledby="modal-titulo" aria-modal="true">
+        <a href="#contato" class="modal__fundo" aria-label="Fechar"></a>
+        <div class="modal__caixa">
+          <a href="#contato" class="modal__fechar" aria-label="Fechar">&times;</a>
+          <h3 id="modal-titulo">Recebi, obrigado.</h3>
+          <p>Vou ler com calma e te respondo hoje ou amanhã pelo WhatsApp ou e-mail que você deixou. Se for urgente, pode me ligar no (11) 99999-0000.</p>
+          <a href="#contato" class="botao">Fechar</a>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="rodape">
+    <div class="container rodape__linha">
+      <div class="rodape__marca">
+        <strong>Marcenaria Silva</strong>
+        <span>Carlos Silva, marceneiro</span>
+        <span>Rua Ibitirama, 000 — Vila Prudente, São Paulo</span>
+        <a href="tel:+5511999990000">(11) 99999-0000</a>
+      </div>
+
+      <nav class="rodape__coluna">
+        <span class="rodape__rotulo">Páginas</span>
+        <a href="#sobre">Quem faz</a>
+        <a href="#servicos">O que eu faço</a>
+        <a href="#como-trabalho">Como trabalho</a>
+        <a href="#depoimentos">Clientes</a>
+        <a href="#contato">Contato</a>
+      </nav>
+
+      <nav class="rodape__coluna">
+        <span class="rodape__rotulo">Redes</span>
+        <a href="https://instagram.com/" rel="noopener">Instagram</a>
+        <a href="https://wa.me/5511999990000" rel="noopener">WhatsApp</a>
+        <a href="mailto:carlos@marcenariasilva.com.br">E-mail</a>
+      </nav>
+    </div>
+    <div class="container rodape__base">
+      <span>© 2026 Marcenaria Silva · CNPJ 00.000.000/0001-00</span>
+      <a href="#inicio">Voltar ao topo ↑</a>
+    </div>
+  </footer>
+
+  <!-- Máscaras de formulário e contador de caracteres (opcional; o site funciona sem este arquivo). -->
+  <script src="js/mascaras.js"></script>
+
+  <!-- Animações com GSAP + ScrollTrigger (opcional; sem internet ou sem JS o site aparece normalmente). -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/gsap.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollTrigger.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.5/ScrollToPlugin.min.js"></script>
+  <script src="js/animacoes.js"></script>
+
+</body>
+</html>

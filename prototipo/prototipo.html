@@ -1,0 +1,279 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Protótipo (wireframe) — Landing Page Marcenaria Silva</title>
+  <style>
+    /* Wireframe de baixa fidelidade — Parte A da PTI */
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    body { font-family: Arial, sans-serif; background: #e9e9e9; color: #333; padding: 2rem 1rem; }
+    h1.titulo { text-align: center; margin-bottom: 0.5rem; }
+    p.sub { text-align: center; color: #666; margin-bottom: 2rem; }
+    .telas { display: flex; flex-wrap: wrap; justify-content: center; gap: 2rem; align-items: flex-start; }
+    .tela { background: #fff; border: 2px solid #999; box-shadow: 0 4px 12px rgba(0,0,0,.15); }
+    .tela--desktop { width: 720px; }
+    .tela--mobile { width: 300px; }
+    .tela h2 { font-size: .9rem; background: #333; color: #fff; padding: .4rem .6rem; letter-spacing: .05em; }
+    .faixa { border-bottom: 2px dashed #bbb; padding: .8rem; }
+    .faixa__nome { font-size: .7rem; font-weight: bold; color: #c0392b; text-transform: uppercase; margin-bottom: .5rem; }
+    .linha { display: flex; gap: .6rem; }
+    .col { flex: 1; display: flex; flex-direction: column; gap: .4rem; }
+    .caixa { background: #ddd; border: 1px solid #aaa; display: flex; align-items: center; justify-content: center; font-size: .7rem; color: #555; min-height: 28px; text-align: center; padding: .25rem; }
+    .caixa--img { background: repeating-linear-gradient(45deg,#ccc 0 6px,#e5e5e5 6px 12px); min-height: 90px; }
+    .caixa--btn { background: #555; color: #fff; border-radius: 999px; min-height: 26px; }
+    .caixa--titulo { background: none; border: none; font-weight: bold; font-size: .85rem; color: #222; justify-content: flex-start; }
+    .caixa--texto { background: none; border: none; justify-content: flex-start; }
+    .caixa--texto::before { content: ""; display: block; width: 100%; height: 10px; background: repeating-linear-gradient(0deg,#ccc 0 2px,transparent 2px 5px); }
+    .caixa--input { background: #fff; min-height: 24px; }
+    .card { flex: 1; border: 1px solid #aaa; padding: .4rem; display: flex; flex-direction: column; gap: .3rem; background: #f7f7f7; }
+    .mobile .linha { flex-direction: column; }
+    .nota { max-width: 1060px; margin: 2.5rem auto 0; background: #fff; border: 1px solid #ccc; padding: 1.25rem 1.5rem; line-height: 1.6; }
+    .nota h3 { margin-bottom: .5rem; }
+    .nota ul { padding-left: 1.2rem; }
+  </style>
+</head>
+<body>
+  <h1 class="titulo">Protótipo — Landing Page “Marcenaria Silva”</h1>
+  <p class="sub">Parte A da PTI • Wireframe de baixa fidelidade (versão desktop e versão celular)</p>
+
+  <div class="telas">
+
+    <!-- ================= DESKTOP ================= -->
+    <div class="tela tela--desktop">
+      <h2>DESKTOP (≥ 992px)</h2>
+
+      <div class="faixa">
+        <div class="faixa__nome">Cabeçalho fixo</div>
+        <div class="linha">
+          <div class="caixa" style="flex:0 0 120px">LOGO</div>
+          <div class="caixa" style="flex:1">Sobre • Serviços • Vantagens • Como funciona • Depoimentos</div>
+          <div class="caixa caixa--btn" style="flex:0 0 130px">Orçamento grátis</div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 1 — Hero (chamada principal)</div>
+        <div class="linha">
+          <div class="col">
+            <div class="caixa caixa--titulo">Título H1: Móveis planejados sob medida</div>
+            <div class="caixa caixa--texto"></div>
+            <div class="linha">
+              <div class="caixa caixa--btn">Solicitar orçamento</div>
+              <div class="caixa">Ver serviços</div>
+            </div>
+            <div class="caixa" style="background:none;border:none">✔ Selo ✔ Selo ✔ Selo</div>
+          </div>
+          <div class="col">
+            <div class="caixa caixa--img" style="min-height:140px">IMAGEM / DESTAQUE<br>+ cartões de números</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 2 — Sobre a empresa</div>
+        <div class="linha">
+          <div class="col"><div class="caixa caixa--img">FOTO DO MARCENEIRO</div></div>
+          <div class="col">
+            <div class="caixa caixa--titulo">Título H2: Tradição familiar</div>
+            <div class="caixa caixa--texto"></div>
+            <div class="linha">
+              <div class="caixa">15+ anos</div>
+              <div class="caixa">350+ projetos</div>
+              <div class="caixa">100% à mão</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 3 — Serviços / produtos (6 cartões)</div>
+        <div class="caixa caixa--titulo" style="justify-content:center">Título H2 centralizado</div>
+        <div class="linha">
+          <div class="card"><div class="caixa">ícone</div><div class="caixa caixa--titulo">Cozinhas</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa">ícone</div><div class="caixa caixa--titulo">Guarda-roupas</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa">ícone</div><div class="caixa caixa--titulo">Home office</div><div class="caixa caixa--texto"></div></div>
+        </div>
+        <div class="linha" style="margin-top:.6rem">
+          <div class="card"><div class="caixa">ícone</div><div class="caixa caixa--titulo">Sala</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa">ícone</div><div class="caixa caixa--titulo">Restauração</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa">ícone</div><div class="caixa caixa--titulo">Personalizado</div><div class="caixa caixa--texto"></div></div>
+        </div>
+      </div>
+
+      <div class="faixa" style="background:#f0f0f0">
+        <div class="faixa__nome">Faixa 4 — Vantagens e benefícios (fundo escuro, 6 itens)</div>
+        <div class="caixa caixa--titulo" style="justify-content:center">Por que escolher?</div>
+        <div class="linha">
+          <div class="card"><div class="caixa caixa--titulo">01 Atendimento direto</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa caixa--titulo">02 Preço justo</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa caixa--titulo">03 Materiais</div><div class="caixa caixa--texto"></div></div>
+        </div>
+        <div class="linha" style="margin-top:.6rem">
+          <div class="card"><div class="caixa caixa--titulo">04 Garantia</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa caixa--titulo">05 Prazo</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa caixa--titulo">06 Instalação</div><div class="caixa caixa--texto"></div></div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 5 — Como funciona (4 etapas)</div>
+        <div class="linha">
+          <div class="card"><div class="caixa" style="border-radius:50%;width:28px;min-height:28px">1</div><div class="caixa caixa--titulo">Contato</div></div>
+          <div class="card"><div class="caixa" style="border-radius:50%;width:28px;min-height:28px">2</div><div class="caixa caixa--titulo">Medição</div></div>
+          <div class="card"><div class="caixa" style="border-radius:50%;width:28px;min-height:28px">3</div><div class="caixa caixa--titulo">Projeto</div></div>
+          <div class="card"><div class="caixa" style="border-radius:50%;width:28px;min-height:28px">4</div><div class="caixa caixa--titulo">Instalação</div></div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 6 — Depoimentos (3 cartões)</div>
+        <div class="linha">
+          <div class="card"><div class="caixa" style="background:none;border:none">★★★★★</div><div class="caixa caixa--texto"></div><div class="caixa">Nome cliente</div></div>
+          <div class="card"><div class="caixa" style="background:none;border:none">★★★★★</div><div class="caixa caixa--texto"></div><div class="caixa">Nome cliente</div></div>
+          <div class="card"><div class="caixa" style="background:none;border:none">★★★★★</div><div class="caixa caixa--texto"></div><div class="caixa">Nome cliente</div></div>
+        </div>
+      </div>
+
+      <div class="faixa" style="background:#f0f0f0">
+        <div class="faixa__nome">Faixa 7 — Contato (formulário)</div>
+        <div class="linha">
+          <div class="col">
+            <div class="caixa caixa--titulo">Solicite seu orçamento</div>
+            <div class="caixa caixa--texto"></div>
+            <div class="caixa">📞 Telefone / WhatsApp</div>
+            <div class="caixa">✉ E-mail</div>
+            <div class="caixa">📍 Região atendida</div>
+            <div class="caixa">🕒 Horário</div>
+          </div>
+          <div class="col" style="border:1px solid #aaa;padding:.5rem;background:#fafafa">
+            <div class="caixa caixa--input">Nome</div>
+            <div class="linha"><div class="caixa caixa--input">E-mail</div><div class="caixa caixa--input">WhatsApp</div></div>
+            <div class="caixa caixa--input">Tipo de móvel ▾</div>
+            <div class="caixa caixa--input" style="min-height:50px">Mensagem</div>
+            <div class="caixa" style="background:none;border:none;justify-content:flex-start">☐ Autorizo contato</div>
+            <div class="caixa caixa--btn">Enviar pedido de orçamento</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="faixa" style="border-bottom:none">
+        <div class="faixa__nome">Rodapé</div>
+        <div class="linha">
+          <div class="caixa">Logo + frase</div>
+          <div class="caixa">Links de navegação</div>
+          <div class="caixa">Redes sociais</div>
+        </div>
+        <div class="caixa" style="margin-top:.5rem">© 2026 Marcenaria Silva</div>
+      </div>
+    </div>
+
+    <!-- ================= MOBILE ================= -->
+    <div class="tela tela--mobile mobile">
+      <h2>CELULAR (≤ 768px)</h2>
+
+      <div class="faixa">
+        <div class="faixa__nome">Cabeçalho</div>
+        <div style="display:flex;justify-content:space-between;gap:.5rem">
+          <div class="caixa" style="flex:1">LOGO</div>
+          <div class="caixa" style="flex:0 0 40px">☰</div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 1 — Hero</div>
+        <div class="col">
+          <div class="caixa caixa--titulo">Título H1</div>
+          <div class="caixa caixa--texto"></div>
+          <div class="caixa caixa--btn">Solicitar orçamento</div>
+          <div class="caixa">Ver serviços</div>
+          <div class="caixa caixa--img">IMAGEM</div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 2 — Sobre</div>
+        <div class="col">
+          <div class="caixa caixa--img">FOTO</div>
+          <div class="caixa caixa--titulo">Título H2</div>
+          <div class="caixa caixa--texto"></div>
+          <div class="caixa">15+ anos</div>
+          <div class="caixa">350+ projetos</div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 3 — Serviços (empilhados)</div>
+        <div class="col">
+          <div class="card"><div class="caixa caixa--titulo">Cozinhas</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa caixa--titulo">Guarda-roupas</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa caixa--titulo">… (6 no total)</div></div>
+        </div>
+      </div>
+
+      <div class="faixa" style="background:#f0f0f0">
+        <div class="faixa__nome">Faixa 4 — Vantagens (empilhadas)</div>
+        <div class="col">
+          <div class="card"><div class="caixa caixa--titulo">01 Atendimento direto</div></div>
+          <div class="card"><div class="caixa caixa--titulo">02 Preço justo</div></div>
+          <div class="card"><div class="caixa caixa--titulo">… (6 no total)</div></div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 5 — Como funciona</div>
+        <div class="col">
+          <div class="card"><div class="caixa caixa--titulo">1 Contato</div></div>
+          <div class="card"><div class="caixa caixa--titulo">2 Medição</div></div>
+          <div class="card"><div class="caixa caixa--titulo">3 Projeto</div></div>
+          <div class="card"><div class="caixa caixa--titulo">4 Instalação</div></div>
+        </div>
+      </div>
+
+      <div class="faixa">
+        <div class="faixa__nome">Faixa 6 — Depoimentos</div>
+        <div class="col">
+          <div class="card"><div class="caixa" style="background:none;border:none">★★★★★</div><div class="caixa caixa--texto"></div></div>
+          <div class="card"><div class="caixa" style="background:none;border:none">★★★★★</div><div class="caixa caixa--texto"></div></div>
+        </div>
+      </div>
+
+      <div class="faixa" style="background:#f0f0f0">
+        <div class="faixa__nome">Faixa 7 — Contato</div>
+        <div class="col">
+          <div class="caixa caixa--titulo">Solicite seu orçamento</div>
+          <div class="caixa">📞 ✉ 📍 🕒</div>
+          <div class="caixa caixa--input">Nome</div>
+          <div class="caixa caixa--input">E-mail</div>
+          <div class="caixa caixa--input">WhatsApp</div>
+          <div class="caixa caixa--input">Tipo de móvel ▾</div>
+          <div class="caixa caixa--input" style="min-height:44px">Mensagem</div>
+          <div class="caixa caixa--btn">Enviar</div>
+        </div>
+      </div>
+
+      <div class="faixa" style="border-bottom:none">
+        <div class="faixa__nome">Rodapé</div>
+        <div class="col">
+          <div class="caixa">Logo</div>
+          <div class="caixa">Links</div>
+          <div class="caixa">Redes sociais</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="nota">
+    <h3>Decisões de projeto</h3>
+    <ul>
+      <li><strong>Ramo escolhido:</strong> marceneiro autônomo (Marcenaria Silva – móveis planejados sob medida).</li>
+      <li><strong>Público:</strong> pessoas que chegam por busca no Google ou anúncio em redes sociais procurando móveis planejados; objetivo da página é gerar pedido de orçamento.</li>
+      <li><strong>Faixas (7):</strong> Hero, Sobre, Serviços, Vantagens, Como funciona, Depoimentos e Contato com formulário — mais cabeçalho e rodapé.</li>
+      <li><strong>Paleta e tom:</strong> fundo cor de papel (#f6f1e8), texto quase preto (#26201b) e um único tom de madeira (#7a4a1f) como destaque; títulos em serifa (Fraunces). Faixas separadas por linhas finas em vez de caixas, e texto em primeira pessoa com dados concretos (bairro, materiais, prazo, pagamento) para parecer um negócio real e não um modelo genérico.</li>
+      <li><strong>Layout:</strong> Flexbox em todas as faixas; no desktop os cartões ficam em linha (<code>flex-wrap</code>) e no celular empilham em coluna via <code>@media (max-width: 768px)</code>.</li>
+      <li><strong>Menu mobile:</strong> hambúrguer feito apenas com HTML/CSS (checkbox + seletor <code>:checked ~</code>), sem JavaScript.</li>
+      <li><strong>Chamadas para ação:</strong> botão “Orçamento grátis” no cabeçalho, no hero e o formulário ao final, sempre visíveis.</li>
+    </ul>
+  </div>
+</body>
+</html>
