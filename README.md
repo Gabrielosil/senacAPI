@@ -1,5 +1,6 @@
 # PTI — Landing Page para Autônomo
 
+**Aluno:** Gabriel Oliveira Silva
 **Disciplina:** Fundamentos de Programação Web — Senac EAD
 **Tema:** Landing Page para Autônomo
 **Ramo escolhido:** Marceneiro autônomo — *Marcenaria Silva*
